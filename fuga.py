@@ -65,8 +65,7 @@ def parallel(l,foco,fols):
 
 for i in range(3,N+1):
     print('------------------'+str(i)+'------------------')
-    L = list(itertools.permutations(R,i))
-    L = L[529977:]
+    L = itertools.permutations(R,i)
     for l in L:
         series(l,[],[])
 
